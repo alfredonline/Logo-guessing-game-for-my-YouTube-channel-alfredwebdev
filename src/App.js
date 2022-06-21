@@ -62,7 +62,9 @@ function App() {
     );
 
     if (userIsCorrect) {
-      setScore((score) => score++);
+      let scoreNew = score
+      scoreNew++
+      setScore(scoreNew)
       FilterArr();
       setCanShowFullImg(true);
     } else {
