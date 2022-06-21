@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.standardImg {
+  width: 300px;
+  height: 300px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+  margin-top: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.zoomedIn {
+  background-position: right;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.zoomedOut {
+  background-position: center;
+  background-size: cover;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.fullScreen {
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.resetGameButton {
+  padding: 12px;
+  background-color: green;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  width: 200px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  margin: 0 auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.resetGameButton:hover {
+  transform: translateY(-2px);
+}
+
+.resetGameButton:active {
+  transform: translateY(0px);
 }
